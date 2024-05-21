@@ -13,36 +13,5 @@ paths:
           description: Error
         '401':
           description: Unauthenticate
-  /products/{product_id}:
-    get:
-      tags:
-        - Product
-      parameters:
-        - in: path
-          name: product_id
-          schema:
-            type: integer
-          required: true
-      summary: ดูสินค้า
-      requestBody: 
-        description: ดูสินค้า
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                status:
-                  type: string
-                  example: OK
-                message:
-                  type: string
-                  example: Success
-      responses:
-        '200': 
-          description: OK
-        '400': 
-          description: Error
-        '401':
-          description: Unauthenticate
 
 
