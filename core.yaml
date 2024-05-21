@@ -3,6 +3,14 @@ info:
   title: Core API
   version: '0.0.1'
 paths:
+  /products: 
+      get: 
+        tags:
+          - Product
+        summary: ดูรายการสินค้าคงคลัง
+        responses:
+          '200': 
+            description: OK
   /test:
     description: Test
     get: 
